@@ -34,8 +34,6 @@ print(car3 == car2)
 print(car1 <= car3)
 print(car1 > car3)
 
-# cars = [car1, car2, car3]
-# cars.sort()
-# print([car.__model for car in cars])
+
 
 
