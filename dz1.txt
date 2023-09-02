@@ -1,0 +1,63 @@
+Создать таблицу занятие (тип, дата, стоимость)
+добавить 3 любых занятия
+показать все занятия, тип которых соответствует английский
+
+
+
+
+-- create database lessons;
+-- use lessons;
+
+create table if not exists lesson(
+date_ int(10),
+price int(10),
+type_ nvarchar(15));
+
+insert into lesson (date_, price, type_)
+value
+(16, 1100, "English"),
+(27, 700, "Spanish"),
+(4, 950, "Mathematics");
+
+select * from lesson where type_ = "English";
+
+
+*************************************************************************
+Создать таблицу игры (имя игры, дата и время сохранения)
+добавить 3 любые игры 
+показать все записи игр
+
+create table if not exists Game(
+nameGame varchar(10),
+dateGame varchar(10),
+timeSaveGame varchar(10)
+);
+
+insert into Game (nameGame, dateGame, timeSaveGame)
+value
+("tetris", "12.01", "16:45"),
+("mario", "14.08", "07.25"),
+("ralli", "27.08", "6:33");
+
+select * from Game;
+
+*****************************************************************************
+
+Создать таблицу оружие(имя, тип, мощность)
+добавить 3 любых оружия
+показать оружия(имя, тип и мощность) мощность, которых равна 200
+
+create table if not exists weapon(
+name_ varchar(10),
+type_ varchar(10),
+power_ int(3)
+);
+insert into weapon (name_, type_, power_)
+value
+("Губитель", "меч", 200),
+("Жнец", "коса", 189),
+("Громобой", "молот", 200);
+
+select * from weapon where power_ = 200;
+
+
